@@ -19,7 +19,7 @@
 						<input
 							name="title"
 							class="form-control form-control-lg"
-							placeholder="Article Title"
+							placeholder="Título del artículo"
 							value={article.title}
 						/>
 					</fieldset>
@@ -28,7 +28,7 @@
 						<input
 							name="description"
 							class="form-control"
-							placeholder="What's this article about?"
+							placeholder="Sobre qué trata el artículo?"
 							value={article.description}
 						/>
 					</fieldset>
@@ -38,7 +38,7 @@
 							name="body"
 							class="form-control"
 							rows="8"
-							placeholder="Write your article (in markdown)"
+							placeholder="Escribe la información que creas importante"
 							value={article.body}
 						/>
 					</fieldset>
@@ -46,7 +46,7 @@
 					<fieldset class="form-group">
 						<input
 							class="form-control"
-							placeholder="Enter tags"
+							placeholder="Qué tipos de trabajo realizó?"
 							on:keydown={(event) => {
 								if (event.key === 'Enter') {
 									event.preventDefault();
@@ -84,7 +84,7 @@
 						<input hidden name="tag" value={tag} />
 					{/each}
 
-					<button class="btn btn-lg pull-xs-right btn-primary">Publish Article</button>
+					<button class="btn btn-lg pull-xs-right btn-primary">Publicar artículo</button>
 				</form>
 			</div>
 		</div>

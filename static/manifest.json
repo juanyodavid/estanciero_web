@@ -1,6 +1,6 @@
 {
-	"background_color": "#ffffff",
-	"theme_color": "#5cb85c",
+	"background_color": "#fbf3da",
+	"theme_color": "#c6cee7",
 	"name": "Svelte RealWorld",
 	"short_name": "RealWorld",
 	"display": "minimal-ui",

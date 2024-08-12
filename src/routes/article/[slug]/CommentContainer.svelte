@@ -13,7 +13,7 @@
 		</div>
 	{:else}
 		<p>
-			<a href="/login">Sign in</a>
+			<a href="/login">Iniciar sesión</a>
 			or
 			<a href="/register">sign up</a>
 			to add comments on this article.

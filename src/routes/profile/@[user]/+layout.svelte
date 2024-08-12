@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>{data.profile.username} • Conduit</title>
+	<title>{data.profile.username} • Estanciero</title>
 </svelte:head>
 
 <div class="profile-page">
@@ -26,7 +26,7 @@
 					{#if data.profile.username === data.user?.username}
 						<a href="/settings" class="btn btn-sm btn-outline-secondary action-btn">
 							<i class="ion-gear-a" />
-							Edit Profile Settings
+							Editar Configuración del perfil
 						</a>
 					{:else if data.user}
 						<form
@@ -52,12 +52,12 @@
 								class:btn-outline-secondary={!data.profile.following}
 							>
 								<i class="ion-plus-round" />
-								{data.profile.following ? 'Unfollow' : 'Follow'}
+								{data.profile.following ? 'Dejar de seguir a' : 'Seguir a'}
 								{data.profile.username}
 							</button>
 						</form>
 					{:else}
-						<a href="/login">Sign in to follow</a>
+						<a href="/login">Iniciar sesión para seguir</a>
 					{/if}
 				</div>
 			</div>
@@ -75,7 +75,7 @@
 								class="nav-link"
 								class:active={!is_favorites}
 							>
-								Articles
+								Artículos
 							</a>
 						</li>
 
@@ -85,7 +85,7 @@
 								class="nav-link"
 								class:active={is_favorites}
 							>
-								Favorites
+								Favoritos
 							</a>
 						</li>
 					</ul>

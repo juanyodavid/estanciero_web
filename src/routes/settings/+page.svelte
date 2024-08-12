@@ -10,14 +10,14 @@
 </script>
 
 <svelte:head>
-	<title>Settings • Conduit</title>
+	<title>Configuración • Estanciero</title>
 </svelte:head>
 
 <div class="settings-page">
 	<div class="container page">
 		<div class="row">
 			<div class="col-md-6 offset-md-3 col-xs-12">
-				<h1 class="text-xs-center">Your Settings</h1>
+				<h1 class="text-xs-center">Tu Configuración</h1>
 
 				<ListErrors errors={form?.errors} />
 
@@ -37,7 +37,7 @@
 								class="form-control"
 								name="image"
 								type="text"
-								placeholder="URL of profile picture"
+								placeholder="URL de la foto de perfil"
 								value={data.user.image}
 							/>
 						</fieldset>
@@ -47,7 +47,7 @@
 								class="form-control form-control-lg"
 								name="username"
 								type="text"
-								placeholder="Username"
+								placeholder="Nombre de usuario"
 								value={data.user.username}
 							/>
 						</fieldset>
@@ -57,7 +57,7 @@
 								class="form-control form-control-lg"
 								name="bio"
 								rows="8"
-								placeholder="Short bio about you"
+								placeholder="Breve información acerca de ti"
 								value={data.user.bio}
 							/>
 						</fieldset>
@@ -77,18 +77,18 @@
 								class="form-control form-control-lg"
 								name="password"
 								type="password"
-								placeholder="New Password"
+								placeholder="Nueva contraseña"
 							/>
 						</fieldset>
 
-						<button class="btn btn-lg btn-primary pull-xs-right">Update Settings</button>
+						<button class="btn btn-lg btn-primary pull-xs-right">Actualizar Configuración</button>
 					</fieldset>
 				</form>
 
 				<hr />
 
 				<form use:enhance method="POST" action="?/logout">
-					<button class="btn btn-outline-danger">Or click here to logout.</button>
+					<button class="btn btn-outline-danger">Presione aquí para cerrar sesión.</button>
 				</form>
 			</div>
 		</div>

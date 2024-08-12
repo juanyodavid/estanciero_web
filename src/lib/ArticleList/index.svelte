@@ -6,7 +6,7 @@
 </script>
 
 {#if articles.length === 0}
-	<div class="article-preview">No articles are here... yet.</div>
+	<div class="article-preview">Todavía no tienes artículos escritos ...</div>
 {:else}
 	<div>
 		{#each articles as article (article.slug)}

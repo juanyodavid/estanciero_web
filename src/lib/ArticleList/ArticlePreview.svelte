@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	import { enhance } from '$app/forms';
 
 	export let article;
@@ -52,7 +54,7 @@
 	<div class="preview-link">
 		<h1>{article.title}</h1>
 		<p>{article.description}</p>
-		<span>Read more...</span>
+		<!-- <a href="/article/553">Read more...</a> -->
 		<ul class="tag-list">
 			{#each article.tagList as tag}
 				<li class="tag-default tag-pill tag-outline"><a href="/?tag={tag}">{tag}</a></li>

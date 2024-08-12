@@ -4,22 +4,22 @@
 
 <nav class="navbar navbar-light">
 	<div class="container">
-		<a class="navbar-brand" href="/">conduit</a>
+		<a class="navbar-brand" href="/">Estanciero</a>
 		<ul class="nav navbar-nav pull-xs-right">
 			<li class="nav-item">
-				<a class="nav-link" class:active={$page.url.pathname === '/'} href="/">Home</a>
+				<a class="nav-link" class:active={$page.url.pathname === '/'} href="/">Inicio</a>
 			</li>
 
 			{#if $page.data.user}
 				<li class="nav-item">
 					<a href="/editor" class="nav-link" class:active={$page.url.pathname === '/editor'}>
-						<i class="ion-compose" />&nbsp;New Post
+						<i class="ion-compose" />&nbsp;Nueva publicación
 					</a>
 				</li>
 
 				<li class="nav-item">
 					<a href="/settings" class="nav-link" class:active={$page.url.pathname === '/settings'}>
-						<i class="ion-gear-a" />&nbsp;Settings
+						<i class="ion-gear-a" />&nbsp;Configuración
 					</a>
 				</li>
 
@@ -31,13 +31,13 @@
 			{:else}
 				<li class="nav-item">
 					<a href="/login" class="nav-link" class:active={$page.url.pathname === '/login'}>
-						Sign in
+						Iniciar sesión
 					</a>
 				</li>
 
 				<li class="nav-item">
 					<a href="/register" class="nav-link" class:active={$page.url.pathname === '/register'}>
-						Sign up
+						Registrarse
 					</a>
 				</li>
 			{/if}

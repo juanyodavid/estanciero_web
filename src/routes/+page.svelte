@@ -13,15 +13,15 @@
 </script>
 
 <svelte:head>
-	<title>Conduit</title>
+	<title>Estanciero</title>
 </svelte:head>
 
 <div class="home-page">
 	{#if !data.user}
 		<div class="banner">
 			<div class="container">
-				<h1 class="logo-font">conduit</h1>
-				<p>A place to share your knowledge.</p>
+				<h1 class="logo-font">Estanciero</h1>
+				<p>Un lugar para contratar mejor.</p>
 			</div>
 		</div>
 	{/if}
@@ -33,17 +33,17 @@
 					<ul class="nav nav-pills outline-active">
 						<li class="nav-item">
 							<a href="/?tab=all" class="nav-link" class:active={tab === 'all' && !tag}>
-								Global Feed
+								Publicaciones en Paraguay
 							</a>
 						</li>
 
 						{#if data.user}
 							<li class="nav-item">
-								<a href="/?tab=feed" class="nav-link" class:active={tab === 'feed'}>Your Feed</a>
+								<a href="/?tab=feed" class="nav-link" class:active={tab === 'feed'}>Tus publicaciones</a>
 							</li>
 						{:else}
 							<li class="nav-item">
-								<a href="/login" class="nav-link">Sign in to see your Feed</a>
+								<a href="/login" class="nav-link">Iniciar sesión para ver tus publicaciones</a>
 							</li>
 						{/if}
 
@@ -64,7 +64,7 @@
 
 			<div class="col-md-3">
 				<div class="sidebar">
-					<p>Popular Tags</p>
+					<p>Etiquetas populares</p>
 					<div class="tag-list">
 						{#each data.tags as tag}
 							<a href="/?tag={tag}" class="tag-default tag-pill">{tag}</a>
